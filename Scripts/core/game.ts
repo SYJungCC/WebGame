@@ -30,7 +30,12 @@
 
     function Update() : void
     {
+
+        
+        helloLabel.rotation +=1;
+
         stage.update();
+
 
     }
 
@@ -38,8 +43,8 @@
     {
         console.log("Game Start...");
 
-        helloLabel = new createjs.Text("Hello World!", "40px Consolate", "#000000");
-        helloLabel.x = 100; 
+        helloLabel = new createjs.Text("I wanna go home !", "40px Consolate", "#000000");
+        helloLabel.x = 140; 
         helloLabel.y = 100; 
 
         stage.addChild(helloLabel);
