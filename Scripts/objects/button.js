@@ -38,5 +38,6 @@ var objects;
         return Button;
     }(createjs.Bitmap));
     objects.Button = Button;
+    1;
 })(objects || (objects = {}));
 //# sourceMappingURL=button.js.map

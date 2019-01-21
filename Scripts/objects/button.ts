@@ -21,5 +21,5 @@ module objects{
         private mouseOut() :void{
             this.alpha = 1.0;
         }
-    }
+    }1
 }
