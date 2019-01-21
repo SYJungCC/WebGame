@@ -10,6 +10,7 @@
     let canvas = document.getElementById("canvas"); // if you change canvas name, you should change this "name"
     let stage:createjs.Stage; // think unity scene. 
     let helloLabel: objects.Label; //I made objects class, that's why the name is objects
+    
 
     function Init() : void {
         console.log("Initialization start");
@@ -23,6 +24,7 @@
 
         //Initialize CreateJS
         stage = new createjs.Stage(canvas);
+        stage.enableMouseOver(20);
         createjs.Ticker.framerate = 60; // 60 FPS
         createjs.Ticker.on("tick",Update); // every single tick call update function. 
         Main();
