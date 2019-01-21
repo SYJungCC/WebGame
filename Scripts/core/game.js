@@ -8,7 +8,7 @@
     //Global Game Variables
     var canvas = document.getElementById("canvas"); // if you change canvas name, you should change this "name"
     var stage; // think unity scene. 
-    var helloLabel;
+    var helloLabel; //I made objects class, that's why the name is objects
     function Init() {
         console.log("Initialization start");
         Start();
@@ -27,9 +27,7 @@
     }
     function Main() {
         console.log("Game Start...");
-        helloLabel = new createjs.Text("I wanna go home !", "40px Consolate", "#000000");
-        helloLabel.x = 140;
-        helloLabel.y = 100;
+        helloLabel = new objects.Label("I wanna go home!", "40px", "Consolas", "#000000", 320, 240, true);
         stage.addChild(helloLabel);
     }
     window.onload = Init;
